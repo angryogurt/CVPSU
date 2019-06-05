@@ -1,0 +1,1 @@
+pyuic5 brand_edit.ui -o brandEdit.py

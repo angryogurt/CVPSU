@@ -1,0 +1,1 @@
+pyuic5 color_edit.ui -o colorEdit.py

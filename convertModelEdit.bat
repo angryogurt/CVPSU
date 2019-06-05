@@ -1,0 +1,1 @@
+pyuic5 model_edit.ui -o modelEdit.py

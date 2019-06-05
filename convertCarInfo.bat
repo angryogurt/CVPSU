@@ -1,0 +1,1 @@
+pyuic5 view_car_info.ui -o viewCarsInfo.py

@@ -1,0 +1,1 @@
+pyuic5 type_edit.ui -o typeEdit.py
