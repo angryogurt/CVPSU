@@ -1,9 +1,13 @@
 import os
 import sys
 import matplotlib.pyplot as plt
-import cv2
 import warnings
+import tensorflow as tf
+import cv2
+from detector.detector import MotionDetector
 
+physical_devices = tf.config.experimental.list_physical_devices('GPU')
+tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 ROOT_DIR = os.path.abspath("../")
 
@@ -65,16 +69,35 @@ class_names = ['BG', 'person', 'bicycle', 'car', 'motorcycle', 'airplane',
 
 VIDEO_DIR = os.path.join(ROOT_DIR, "data/1.mp4")
 vid = cv2.VideoCapture(VIDEO_DIR)
-# image = skimage.io.imread('test5.jpg')
+sucsess, image = vid.read()
+scale_percent = 50 # Процент от изначального размера
+width = int(image.shape[1] * scale_percent / 100)
+height = int(image.shape[0] * scale_percent / 100)
+dim = (width, height)
 
-for i in range(2):
+detector = MotionDetector(bg_history=20, brightness_discard_level=125, group_boxes=False, expansion_step=5)
+
+res = []
+
+for i in range(0):
     sucsess, image = vid.read()
-    if i > 0:
-        print("Start compute img №"+str(i))
-        results = model.detect([image], verbose=0)
+
+for i in range(600):
+    sucsess, image = vid.read()
+    print("Read img №" + str(i))
+    resized = cv2.resize(image, dim, interpolation=cv2.INTER_AREA)
+    croped = image[400:1500, 50:1200]
+    boxes = detector.detect(croped)
+    if boxes:
+        print("Compute img №" + str(i))
+        results = model.detect([resized], verbose=0)
         r = results[0]
-        img = visualize.get_instances(image, r['rois'], r['masks'], r['class_ids'], class_names, r['scores'])
-        plt.savefig("../../results/cadr" + str(i))
+        img = visualize.get_instances(resized, r['rois'], r['masks'], r['class_ids'], class_names, r['scores'])
+        #plt.savefig("../../results2/cadr" + str(i))
+        cv2.imwrite("../../results2/zone" + str(i)+".png", croped)
+        plt.clf()
+    #else:
+        #cv2.imwrite("../../results2/cadr" + str(i)+".png", image)
 
 
 

@@ -1,2 +1,5 @@
-data/
 .idea/
+venv/
+Mask_RCNN/data/
+Mask_RCNN/samples/mask_rcnn_coco.h5
+__pycache__/
