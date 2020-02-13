@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c12451a6-c0fa-4c97-9001-1563b8bc2046" name="Default" comment="">
+    <list default="true" id="c12451a6-c0fa-4c97-9001-1563b8bc2046" name="Default" comment="- transfer project to CPC PC&#10;- exclude data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mask_RCNN/mrcnn/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mask_RCNN/mrcnn/visualize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mask_RCNN/samples/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mask_RCNN/samples/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mask_RCNN/samples/makevideo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mask_RCNN/samples/videoprepear.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mask_RCNN/samples/videoprepear.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mask_RCNN/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Mask_RCNN/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="angryogurt" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1W7tpCLkusN2KEDj4RHrs6uTtlZ" />
@@ -189,7 +191,30 @@
       <option name="presentableId" value="Default" />
       <updated>1537716974967</updated>
     </task>
+    <task id="LOCAL-00001" summary="- transfer project to CPC PC&#10;- exclude data">
+      <created>1581599612505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581599612505</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- transfer project to CPC PC&#10;- exclude data" />
+    <option name="LAST_COMMIT_MESSAGE" value="- transfer project to CPC PC&#10;- exclude data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578512977189">
@@ -200,10 +225,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="585" y="357" width="806" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1578904773007" />
-    <state x="635" y="149" width="706" height="807" key="CommitChangelistDialog2" timestamp="1581599513457">
+    <state x="635" y="149" width="706" height="807" key="CommitChangelistDialog2" timestamp="1581599610170">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="635" y="149" width="706" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1581599513457" />
+    <state x="635" y="149" width="706" height="807" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1581599610170" />
     <state width="1830" height="277" key="GridCell.Tab.0.bottom" timestamp="1579526776351">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -240,6 +265,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1578595084546" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1581599692406">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1581599692406" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1581599345238">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
